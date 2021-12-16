@@ -1,0 +1,116 @@
+<html>
+  <head>
+    <title>Quick CSS Selector Guide</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+  </head>
+  
+  <body>
+    <header>
+      <h1>CSS Selector Cheatsheet</h1>
+    </header>
+
+<!-- SELECTOR TABLE-->
+  <div id="table-1">
+    <h2>Selector Table Guide</h2>   
+    <table>
+        <!--Table Header-->
+        <thead>
+          <tr>
+            <th>Tag : </th>
+            <th>Syntax : </th>
+            <th>What It Does : </th>
+          </tr>
+        </thead>
+        <!--Table Body: Using classes of tags, syntax, does-->
+        <tbody>
+          <tr>
+            <td class="tags">div</td>
+            <td class="syntax"> N/A </td>
+            <td class="does"> Content <strong>DIV</strong>ision tag.Selects all div tags</td>
+          </tr>
+          <tr>
+            <td class="tags">div , span</td>
+            <td class="syntax">',' comma</td>
+            <td class="does"> Selects all of the specified elements. In this case: Selects all div and span elements.</td>
+          </tr>
+          <tr>
+            <td class="tags"> div span</td>
+            <td class="syntax">div  [space] span</td>
+            <td class="does"> Selects all the elements, in this case: span elements, in a div. </td>
+          </tr>
+          <tr>
+            <td class="tags">#content</td>         
+            <td class="syntax">'#' hashtag </td>
+            <td class="does"> Makes use of the HTML ID selector used to target a single element with a unique id. In this case: An HTML ID of Content. </td>
+          </tr>
+          <tr>
+            <td class="tags">.box</td>
+            <td class="syntax">'.' period</td>
+            <td class="does"> Selects all elements with that class attribute to apply unique CSS declarations.Also emphasizes the importance of semantic CSS aka descriptive code names.</td>
+          </tr>
+          <tr>
+            <td class="tags">div &gt; p</td>
+            <td class="syntax"> &gt; Greater Than </td>
+            <td class="does"> Selects all elements, in this case paragraphs, where the parent is a div element.</td>
+          </tr>
+          <tr>
+            <td class="tags">div + p</td>
+            <td class="syntax">'+' Plus Sign</td>
+            <td class="does"> Selects the first element placed immediately after the div element.In this case: Selects the first paragraph element.</td>
+          </tr>
+          <tr>
+            <td class="tags"> p ~ ul</td>
+            <td class="syntax">'~' Tilde </td>
+            <td class="does"> Selects every element, in this case an Unordered List, preceded by a paragraph element</td>
+         </tr>      
+      </tbody>
+    </table>
+  </div> 
+
+<!-- PSEUDO-CLASS SELECTOR TABLE-->
+  <div id="table-2">
+    <h2> Pseudo-class Selector Table </h2>
+    <table>
+        <!--Table Header-->
+        <thead>
+          <tr>
+            <th>Tag : </th>
+            <th>Syntax : </th>
+            <th>What It Does : </th>
+          </tr>
+        </thead>
+        <!--Table Body: Using classes of tags, syntax, does-->
+        <tbody>
+          <tr>
+            <td class="tags">a:link</td>
+            <td class="syntax"> 'a' stands for anchor. The basic syntax is selector : pseudoclass . </td>
+            <td class="does"> Defines how an unvisited link should be styled.</td>
+          </tr>
+          <tr>
+            <td class="tags">a:visited </td>
+            <td class="syntax">N / A</td>
+            <td class="does"> Defines how a visited link will be styled. </td>
+          </tr>
+          <tr>
+            <td class="tags"> a:hover</td>
+            <td class="syntax">a:hover must come after both a:link and a:visited in order for the CSS styling to work.</td>
+            <td class="does"> Styles how a link will look on mouse hover. </td>
+          </tr>
+          <tr>
+            <td class="tags">div: hover</td>         
+            <td class="syntax"> div:hover 
+              { background-color: blue;
+}</td>
+            <td class="does"> Pseudo-classes can be combined with other elements. In this case: when the div is hovered over it will change its color to blue. </td>
+          </tr>
+          <tr>
+            <td class="tags">p : first-child</td>
+            <td class="syntax">p:first-child {
+  color: blue;
+}</td>
+            <td class="does"> In this case this would style the first paragraph element in the color blue. If you had two paragraph elements the first one would be blue and the second would be whatever other standard you set in your CSS</td>
+          </tr>   
+      </tbody>
+    </table>
+  </div> 
+</body>
